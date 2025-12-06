@@ -1,6 +1,26 @@
 import React, { useState } from "react";
-import { MapPin, Phone, Clock, Send, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Clock, Send } from "lucide-react";
 import { motion } from "framer-motion";
+
+const container = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.8,
+      delayChildren: 0.15,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0, x: 50 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -165,17 +185,20 @@ const ContactUs = () => {
         </motion.div>
 
         {/* Right Column - Contact Info */}
-        <div className="lg:col-span-2 space-y-6">
+        <motion.div
+          className="lg:col-span-2 space-y-6"
+          variants={container}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+        >
           {/* WhatsApp Button */}
           <motion.a
             href="https://wa.me/"
             target="_blank"
             rel="noopener noreferrer"
             className="block bg-linear-to-r from-green-500 to-emerald-500 text-white p-6 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-200 transform hover:scale-[1.02] transition-all duration-300 group"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            variants={item}
           >
             <div className="flex items-center gap-4">
               <div className="shrink-0 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -188,7 +211,7 @@ const ContactUs = () => {
                 </svg>
               </div>
               <div>
-                <p className="font-semibold text-lg">WhatsApp</p>
+                <p className="font-semibold text-lg">Message us on WhatsApp</p>
               </div>
             </div>
           </motion.a>
@@ -196,10 +219,7 @@ const ContactUs = () => {
           {/* Agent Info Card */}
           <motion.div
             className="bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-all duration-300"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, amount: 0.4 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            variants={item}
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-linear-to-br from-blue-100 to-indigo-100 rounded-2xl flex items-center justify-center">
@@ -247,10 +267,7 @@ const ContactUs = () => {
           {/* Office Hours Card */}
           <motion.div
             className="bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-all duration-300"
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            variants={item}
           >
             <div className="flex items-center gap-3 mb-6">
               <div className="w-10 h-10 bg-linear-to-br from-indigo-100 to-purple-100 rounded-xl flex items-center justify-center">
@@ -283,7 +300,7 @@ const ContactUs = () => {
               </p>
             </div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
