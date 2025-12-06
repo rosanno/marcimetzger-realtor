@@ -4,7 +4,7 @@ import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Info from "./components/Info";
 import Navigation from "./components/Navigation";
-import Partners from "./components/partners";
+import Partners from "./components/Partners";
 import SearchForm from "./components/SearchForm";
 import Services from "./components/Services";
 
