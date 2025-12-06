@@ -29,7 +29,7 @@ const Services = () => {
           variants={titleVariants}
           initial="hidden"
           animate="visible"
-          className="text-4xl md:text-5xl font-bold text-gray-900 mb-3"
+          className="text-4xl md:text-5xl font-lora font-bold text-gray-900 mb-3"
         >
           Our Services
         </motion.h1>

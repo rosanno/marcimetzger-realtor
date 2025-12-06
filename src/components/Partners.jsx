@@ -43,7 +43,7 @@ const Partners = () => {
   };
 
   return (
-    <div className="bg-gray-50/70 lg:my-32">
+    <div className="bg-gray-50 lg:my-32">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-20">
         <div className="text-center mb-20">
           <motion.h1
@@ -51,7 +51,7 @@ const Partners = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-gray-900 mb-3"
+            className="text-4xl md:text-5xl font-lora font-bold text-gray-900 mb-3"
           >
             Our Partners
           </motion.h1>

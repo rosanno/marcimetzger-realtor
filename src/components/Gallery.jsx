@@ -93,7 +93,7 @@ const Gallery = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={headingVariants}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+          <h2 className="text-4xl md:text-5xl font-lora font-bold text-gray-900 mb-3">
             Photo Gallery
           </h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto"></div>

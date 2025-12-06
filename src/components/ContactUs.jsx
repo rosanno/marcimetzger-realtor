@@ -33,7 +33,7 @@ const ContactUs = () => {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.6 }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+        <h1 className="text-4xl md:text-5xl font-lora font-bold text-gray-900 mb-3">
           CALL OR VISIT US
         </h1>
 
