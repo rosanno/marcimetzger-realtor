@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Logo1 from "@/assets/logo-1.webp";
 import Logo2 from "@/assets/logo-2.webp";
