@@ -1,0 +1,36 @@
+import AboutMe from "./components/AboutMe";
+import Gallery from "./components/Gallery";
+import Hero from "./components/Hero";
+import Info from "./components/Info";
+import Navigation from "./components/Navigation";
+import Partners from "./components/partners";
+import SearchForm from "./components/SearchForm";
+
+const App = () => {
+  return (
+    <>
+      {/* Navigation bar component */}
+      <Navigation />
+
+      {/* Hero section component */}
+      <Hero />
+
+      {/* Search form component */}
+      <SearchForm />
+
+      {/* About Me component */}
+      <AboutMe />
+
+      {/* Info component */}
+      <Info />
+
+      {/* Partners component */}
+      <Partners />
+
+      {/* Gallery component */}
+      <Gallery />
+    </>
+  );
+};
+
+export default App;
