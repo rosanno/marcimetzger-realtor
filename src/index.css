@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@theme {
+  --font-lora: "Lora", serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-roboto);
+  }
+}

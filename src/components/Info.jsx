@@ -17,7 +17,7 @@ const Info = () => {
           transition={{ duration: 0.6 }}
         >
           <motion.h1
-            className="text-5xl md:text-6xl font-bold text-gray-900 mb-4 tracking-tight"
+            className="text-5xl md:text-6xl font-lora font-bold text-gray-900 mb-4 tracking-tight"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, delay: 0.2 }}

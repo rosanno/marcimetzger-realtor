@@ -83,7 +83,7 @@ const Hero = () => {
         >
           <motion.div variants={itemVariants} className="mb-6">
             <p className="inline-block">
-              <span className="text-white/90 text-sm md:text-base font-light tracking-wider uppercase border border-white/30 px-6 py-2 rounded-full backdrop-blur-sm bg-white/5">
+              <span className="text-white/90 text-sm md:text-base font-light font-lora tracking-wider uppercase border border-white/30 px-6 py-2 rounded-full backdrop-blur-sm bg-white/5">
                 MARCI METZGER - THE RIDGE REALTY GROUP
               </span>
             </p>
@@ -91,7 +91,7 @@ const Hero = () => {
 
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-lora font-bold text-white mb-4 tracking-tight"
           >
             Pahrump Realtor
           </motion.h1>

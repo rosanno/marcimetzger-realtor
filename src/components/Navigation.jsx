@@ -1,19 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Menu, X, Home, Building2, TrendingUp, Info } from "lucide-react";
 
 import Logo from "@/assets/logo.webp";
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const navItems = [
     { name: "Home", icon: Home, href: "#home" },
@@ -24,8 +15,7 @@ export default function Navigation() {
 
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-lg" : "bg-white/95 backdrop-blur-sm"
+      className={`w-full transition-all duration-300"bg-white shadow-lg"
       }`}
     >
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
