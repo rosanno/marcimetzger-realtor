@@ -1,8 +1,10 @@
 import AboutMe from "./components/AboutMe";
 import ContactUs from "./components/ContactUs";
+import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Info from "./components/Info";
+import Map from "./components/Map";
 import Navigation from "./components/Navigation";
 import Partners from "./components/Partners";
 import SearchForm from "./components/SearchForm";
@@ -37,6 +39,12 @@ const App = () => {
 
       {/* Contact Us component */}
       <ContactUs />
+
+      {/* Map component */}
+      <Map />
+
+      {/* Footer component */}
+      <Footer />
     </>
   );
 };
