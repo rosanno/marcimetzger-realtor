@@ -1,10 +1,12 @@
 import AboutMe from "./components/AboutMe";
+import ContactUs from "./components/ContactUs";
 import Gallery from "./components/Gallery";
 import Hero from "./components/Hero";
 import Info from "./components/Info";
 import Navigation from "./components/Navigation";
 import Partners from "./components/partners";
 import SearchForm from "./components/SearchForm";
+import Services from "./components/Services";
 
 const App = () => {
   return (
@@ -29,6 +31,12 @@ const App = () => {
 
       {/* Gallery component */}
       <Gallery />
+
+      {/* Services component */}
+      <Services />
+
+      {/* Contact Us component */}
+      <ContactUs />
     </>
   );
 };

@@ -83,21 +83,20 @@ const Gallery = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
-      <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen py-20 md:py-28 lg:py-32">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <motion.div
-          className="text-center mb-14"
+          className="text-center mb-20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
           variants={headingVariants}
         >
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Gallery</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Explore our curated collection of stunning imagery from around the
-            world
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
+            Photo Gallery
+          </h2>
+          <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
         </motion.div>
 
         {/* Gallery Grid */}
