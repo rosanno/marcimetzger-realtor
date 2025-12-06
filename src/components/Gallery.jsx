@@ -82,6 +82,23 @@ const Gallery = () => {
     },
   };
 
+  const titleVariants = {
+    hidden: { opacity: 0, y: -30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" },
+    },
+  };
+
+  const underlineVariants = {
+    hidden: { width: 0 },
+    visible: {
+      width: "6rem",
+      transition: { duration: 0.8, delay: 0.3, ease: "easeOut" },
+    },
+  };
+
   return (
     <div className="min-h-screen py-20 md:py-28 lg:py-32">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,10 +110,22 @@ const Gallery = () => {
           viewport={{ once: true, amount: 0.3 }}
           variants={headingVariants}
         >
-          <h2 className="text-4xl md:text-5xl font-lora font-bold text-gray-900 mb-3">
+          <motion.h2
+            variants={titleVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-lora font-bold text-gray-900 mb-3"
+          >
             Photo Gallery
-          </h2>
-          <div className="w-24 h-1 bg-blue-600 mx-auto"></div>
+          </motion.h2>
+          <motion.div
+            variants={underlineVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="h-1 bg-blue-600 mx-auto"
+          ></motion.div>
         </motion.div>
 
         {/* Gallery Grid */}

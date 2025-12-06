@@ -40,8 +40,8 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-center mb-6">
-          <p className="text-sm tracking-wider">
-            COPYRIGHT © 2024 PREMIER REALTY - ALL RIGHTS RESERVED
+          <p className="text-sm tracking-wider uppercase">
+            Copyright © 2023 Marci METZGER Homes - All Rights Reserved
           </p>
         </div>
 
