@@ -12,7 +12,7 @@ import Services from "./components/Services";
 
 const App = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* Navigation bar component */}
       <Navigation />
 
@@ -45,7 +45,7 @@ const App = () => {
 
       {/* Footer component */}
       <Footer />
-    </>
+    </div>
   );
 };
 

@@ -43,7 +43,7 @@ const Partners = () => {
   };
 
   return (
-    <div className="bg-gray-50 lg:my-32">
+    <div className="bg-linear-to-br from-gray-50 via-blue-50 to-gray-50 lg:my-32">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-20">
         <div className="text-center mb-20">
           <motion.h1
@@ -75,7 +75,7 @@ const Partners = () => {
           <motion.div
             variants={cardVariants}
             whileHover={{ scale: 1.05, y: -5 }}
-            className="group flex items-center justify-center p-6 bg-white rounded-xl"
+            className="group flex items-center justify-center p-6 bg-gray-50 rounded-xl"
           >
             <img
               src={Logo1}
@@ -86,7 +86,7 @@ const Partners = () => {
           <motion.div
             variants={cardVariants}
             whileHover={{ scale: 1.05, y: -5 }}
-            className="group flex items-center justify-center p-6 bg-white rounded-xl"
+            className="group flex items-center justify-center p-6 bg-gray-50 rounded-xl"
           >
             <img
               src={Logo2}
@@ -97,7 +97,7 @@ const Partners = () => {
           <motion.div
             variants={cardVariants}
             whileHover={{ scale: 1.05, y: -5 }}
-            className="group flex items-center justify-center p-6 bg-white rounded-xl"
+            className="group flex items-center justify-center p-6 bg-gray-50 rounded-xl"
           >
             <img
               src={Logo3}
@@ -117,7 +117,7 @@ const Partners = () => {
         >
           <motion.div
             whileHover={{ scale: 1.05, y: -5 }}
-            className="group w-full sm:w-1/3 flex items-center justify-center p-6 bg-white rounded-xl"
+            className="group w-full sm:w-1/3 flex items-center justify-center p-6 bg-gray-50 rounded-xl"
           >
             <img
               src={Logo4}

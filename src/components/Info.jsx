@@ -13,13 +13,15 @@ const Info = () => {
         <motion.div
           className="text-center mb-20"
           initial={{ opacity: 0, y: -30 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
           <motion.h1
             className="text-5xl md:text-6xl font-lora font-bold text-gray-900 mb-4 tracking-tight"
             initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             Get it sold
@@ -27,7 +29,8 @@ const Info = () => {
           <motion.div
             className="w-24 h-1 bg-blue-600 mx-auto"
             initial={{ width: 0 }}
-            animate={{ width: 96 }}
+            whileInView={{ width: "6rem" }}
+            viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
           ></motion.div>
         </motion.div>
@@ -70,7 +73,7 @@ const Info = () => {
                   <motion.div
                     className="w-12 h-0.5 bg-blue-600"
                     initial={{ width: 0 }}
-                    whileInView={{ width: 48 }}
+                    whileInView={{ width: "3rem" }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.5 }}
                   ></motion.div>
@@ -126,7 +129,7 @@ const Info = () => {
                   <motion.div
                     className="w-8 h-0.5 bg-blue-600"
                     initial={{ width: 0 }}
-                    whileInView={{ width: 32 }}
+                    whileInView={{ width: "2rem" }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.6 }}
                   ></motion.div>
@@ -177,7 +180,7 @@ const Info = () => {
                   <motion.div
                     className="w-8 h-0.5 bg-blue-600"
                     initial={{ width: 0 }}
-                    whileInView={{ width: 32 }}
+                    whileInView={{ width: "2rem" }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.7 }}
                   ></motion.div>

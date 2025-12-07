@@ -52,7 +52,7 @@ const contentVariants = {
 
 const AboutMe = () => {
   return (
-    <div className="bg-linear-to-br from-gray-50 via-blue-50 to-gray-50 lg:my-32">
+    <div className="bg-linear-to-br from-gray-50 via-blue-50 to-gray-50 lg:my-32 overflow-hidden">
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
         <motion.div
           className="text-center mb-20"
@@ -95,7 +95,7 @@ const AboutMe = () => {
               />
               <div className="absolute inset-0 bg-linear-to-t from-blue-900/20 to-transparent"></div>
             </div>
-            <div className="absolute -bottom-6 -right-6 bg-blue-600 text-white px-6 py-4 rounded-xl shadow-lg">
+            <div className="absolute -bottom-4 -right-4 md:-bottom-6 md:-right-6 bg-blue-600 text-white px-4 py-3 md:px-6 md:py-4 rounded-xl shadow-lg">
               <div className="flex items-center gap-2">
                 <Award className="w-6 h-6" />
                 <div>
