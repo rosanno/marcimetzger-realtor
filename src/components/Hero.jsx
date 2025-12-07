@@ -96,10 +96,19 @@ const Hero = () => {
             Pahrump Realtor
           </motion.h1>
 
-          <button className="mt-8 px-8 py-4 bg-white text-black uppercase tracking-wider font-bold text-md rounded-full shadow-xl flex items-center gap-2 mx-auto transition-all duration-300 hover:shadow-2xl hover:scale-105 active:scale-95">
+          <motion.button
+            initial={{ opacity: 0, y: 120 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{
+              duration: 1,
+              ease: "easeOut",
+              delay: 0.6,
+            }}
+            className="mt-8 px-8 py-4 bg-white text-black uppercase tracking-wider font-bold text-md rounded-full shadow-xl flex items-center gap-2 mx-auto hover:shadow-2xl hover:scale-105 active:scale-95"
+          >
             <PhoneCall className="w-5 h-5" />
             Call Now
-          </button>
+          </motion.button>
         </motion.div>
       </div>
     </div>
