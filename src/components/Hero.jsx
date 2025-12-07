@@ -53,7 +53,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative min-h-screen pt-28 pb-20">
+    <div className="relative min-h-screen pt-16 pb-20">
       {/* Background Image */}
       <motion.div
         initial={{ scale: 1.1 }}
@@ -91,26 +91,15 @@ const Hero = () => {
 
           <motion.h1
             variants={itemVariants}
-            className="text-5xl md:text-7xl lg:text-8xl font-lora font-bold text-white mb-4 tracking-tight"
+            className="text-5xl md:text-7xl lg:text-8xl uppercase font-lora font-bold text-white mb-4 tracking-tighter"
           >
             Pahrump Realtor
           </motion.h1>
 
-          <motion.button
-            initial={{ opacity: 0, y: 120 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{
-              duration: 1,
-              ease: "easeOut",
-              delay: 0.6,
-            }}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-            className="mt-8 px-8 py-4 bg-white text-black font-bold text-lg rounded-full shadow-xl flex items-center gap-2 mx-auto"
-          >
+          <button className="mt-8 px-8 py-4 bg-white text-black uppercase tracking-wider font-bold text-md rounded-full shadow-xl flex items-center gap-2 mx-auto transition-all duration-300 hover:shadow-2xl hover:scale-105 active:scale-95">
             <PhoneCall className="w-5 h-5" />
             Call Now
-          </motion.button>
+          </button>
         </motion.div>
       </div>
     </div>
