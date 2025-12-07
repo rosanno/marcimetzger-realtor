@@ -7,7 +7,7 @@ const container = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.8,
+      staggerChildren: 0.15, // ← Much smoother cascade
       delayChildren: 0.15,
     },
   },
@@ -18,7 +18,7 @@ const item = {
   visible: {
     opacity: 1,
     x: 0,
-    transition: { duration: 0.6, ease: "easeOut" },
+    transition: { duration: 0.6, ease: [0.4, 0, 0.6, 1] },
   },
 };
 
@@ -67,16 +67,16 @@ const ContactUs = () => {
       </motion.div>
 
       {/* Two Column Layout */}
-      <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
+      <div className="grid lg:grid-cols-5 gap-8 lg:gap-12 lg:items-stretch">
         {/* Left Column - Contact Form */}
         <motion.div
-          className="lg:col-span-3"
+          className="lg:col-span-3 h-full flex"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <div className="bg-white/70 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 p-8 md:p-12 hover:shadow-blue-100 transition-all duration-300">
+          <div className="bg-white/70 backdrop-blur-xl rounded-3xl shadow-2xl border border-white/20 p-8 md:p-12 hover:shadow-blue-100 transition-all duration-300 h-full w-full flex flex-col">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
               <div className="w-2 h-8 bg-linear-to-b from-blue-600 to-indigo-600 rounded-full"></div>
               Send a Message
