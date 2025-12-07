@@ -77,7 +77,7 @@ export default function Navigation() {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className="w-full transition-all duration-300 bg-white shadow-lg"
+      className="w-full bg-white shadow-lg"
     >
       <div className="max-w-[1300px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-28">
@@ -182,7 +182,7 @@ export default function Navigation() {
                     variants={mobileItemVariants}
                     whileHover={{ x: 10 }}
                     whileTap={{ scale: 0.95 }}
-                    className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg transition-all duration-200"
+                    className="flex items-center space-x-3 px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-lg"
                   >
                     <span className="font-medium">{item.name}</span>
                   </motion.a>

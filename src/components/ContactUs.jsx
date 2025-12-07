@@ -197,7 +197,7 @@ const ContactUs = () => {
             href="https://wa.me/"
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-linear-to-r from-green-500 to-emerald-500 text-white p-6 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-200 transform hover:scale-[1.02] transition-all duration-300 group"
+            className="block bg-linear-to-r from-green-500 to-emerald-500 text-white p-6 rounded-3xl shadow-xl hover:shadow-2xl hover:shadow-green-200"
             variants={item}
           >
             <div className="flex items-center gap-4">
@@ -218,7 +218,7 @@ const ContactUs = () => {
 
           {/* Agent Info Card */}
           <motion.div
-            className="bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-all duration-300"
+            className="bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl border border-white/20 p-8 hover:shadow-2xl"
             variants={item}
           >
             <div className="flex items-center gap-3 mb-6">
@@ -266,7 +266,7 @@ const ContactUs = () => {
 
           {/* Office Hours Card */}
           <motion.div
-            className="bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl border border-white/20 p-8 hover:shadow-2xl transition-all duration-300"
+            className="bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl border border-white/20 p-8 hover:shadow-2xl"
             variants={item}
           >
             <div className="flex items-center gap-3 mb-6">

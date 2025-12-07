@@ -139,7 +139,7 @@ const Gallery = () => {
           {images.map((image, index) => (
             <motion.div
               key={index}
-              className={`${image.gridClass} group relative overflow-hidden rounded-2xl cursor-pointer transition-all duration-300 hover:scale-[1.02] hover:shadow-xl`}
+              className={`${image.gridClass} group relative overflow-hidden rounded-2xl cursor-pointer hover:shadow-xl`}
               variants={itemVariants}
             >
               <img
